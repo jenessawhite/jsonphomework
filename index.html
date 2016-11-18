@@ -5,21 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="normalize.css" media="screen" title="no title">
+  <link rel="stylesheet" href="index.css" media="screen" title="no title">
   <title>Load Your Reddit</title>
 </head>
 
 <body>
-  <nav>
-    <ul class="navigation">
-      <li><a href="#">Reddit</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-  </nav>
+  <div class="header">
+    <a href="https://www.reddit.com/" target="_blank" class="header-logo"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1280px-Reddit_logo_and_wordmark.svg.png" alt="Reddit Logo" class="logo" /></a>
 
-  <input id="pageReq" type="text" name="name" value="">
-  <button id="loadReq" type="button" name="button">Gimme the info</button>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li><a href="https://www.reddit.com/r/all/" target="_blank" class="navigation-link">All</a></li>
+        <li><a href="https://www.reddit.com/r/random/" target="_blank" class="navigation-link">Random</a></li>
+        <li><a href="https://www.reddit.com/r/gifs/" target="_blank" class="navigation-link">GIFs on GIFs</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h1 class="welcome">Load Your Reddit</h1>
+  <p class="welcome-text">
+    Welcome to 'Load Your Reddit'! In the search bar below you can enter in your favorite/go-to subreddit and pull up the 25 latest post. Then just click on the title and you're on your way. Don't know where to start? Go ahead and use some of our favorites
+    at the top!
+  </p>
+
+  <h4>What subreddit do you want?</h4>
+  <div class="search">
+    <input id="pageReq" type="text" name="name" placeholder="'cars'">
+    <button id="loadReq" type="button" name="button">Load It!</button>
+  </div>
 
   <div id="content">
   </div>
