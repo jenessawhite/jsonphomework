@@ -5,4 +5,4 @@ This particular example allows users to load the most recent 25 posts from any s
 
 JSONP is a great quick way to pull some available data without too many hoops to jump through. However when using JSONP be aware that this hack is at the leniency of the API/data provider and there could be some security concerns.
 
-See the demo [here:](https://jenessawhite.github.io/jsonphomework/)
+See the demo [here](https://jenessawhite.github.io/jsonphomework/)
