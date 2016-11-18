@@ -9,7 +9,7 @@ $.getJSON(
   {
     var group = $('<div class="group"></div>')
     $.each(
-      data.data.children.slice(0, 10),
+      data.data.children.slice(0, 25),
       function (request, result) {
         // var thumbnail = $('<img/>')
         if (result.data.thumbnail == 'self' || result.data.thumbnail == null){
