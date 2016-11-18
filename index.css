@@ -113,6 +113,7 @@ html, body {
   padding: 1rem;
   border-top: 1px solid #a80a37;
   border-bottom: 1px solid #a80a37;
+  font-weight: bold;
 }
 
 .navigation-link:hover {
@@ -142,10 +143,34 @@ h4 {
   outline: none;
 }
 
+#pageReq:focus {
+  margin-right: 5px;
+  outline: none;
+  border: 1px solid #ff0017;
+
+}
+
+
 #loadReq{
+  background-color: #ff0017;
+  outline: none;
+  border: 1px solid #ff0017;
+  border-radius: 3px;
+  color: #fafafa;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+}
+
+#loadReq:hover{
   background-color: #fafafa;
   outline: none;
+  border: 1px solid #ff0017;
+  border-radius: 3px;
+  color: #ff0017;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
 }
+
 
 .content {
   display: flex;
