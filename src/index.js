@@ -1,6 +1,6 @@
 function loadIt(){
 var pageReq = $('#pageReq').val();
-if (pageReq == '') {
+if (pageReq == '' || pageReq == null || pageReq == undefined) {
   alert('Your search terms were not valid')
 } else {
 $.getJSON(
@@ -12,26 +12,31 @@ $.getJSON(
       data.data.children.slice(0, 25),
       function (request, result) {
         // var thumbnail = $('<img/>')
+        var subgroup = $('<div class="subgroup"></div>')
         if (result.data.thumbnail == 'self' || result.data.thumbnail == null){
-          group.append($('<img class="thumbnail"/>').attr('src','https://cdn1.iconfinder.com/data/icons/school-supplies-3/64/folder_denied_stop_not_found_deleted_error-128.png'));
+          subgroup.append($('<img class="thumbnail"/>').attr('src','https://cdn1.iconfinder.com/data/icons/school-supplies-3/64/folder_denied_stop_not_found_deleted_error-128.png'));
         } else {
-          group.append($('<img class="thumbnail"/>').attr('src',result.data.thumbnail));
+          subgroup.append($('<img class="thumbnail"/>').attr('src',result.data.thumbnail));
         }
-        group.append($('<br>') );
+        subgroup.append($('<br>') );
         // var url = $('<a href='#'></a>')
-        group.append($('<a class="title"></a>').attr('href',result.data.url).attr('target',"_blank").text(result.data.title));
+        subgroup.append($('<a class="title"></a>').attr('href',result.data.url).attr('target',"_blank").text(result.data.title));
         // var description = $('<p></p>')
-        group.append($('<p class="description"></p>').text("Click to read more!"));
+        subgroup.append($('<p class="description"></p>').text("Click to read more!"));
         // // var ups = $('<p></p>')
-        group.append($('<div class="ups"></div>').text(result.data.ups) );
+        subgroup.append($('<div class="ups"></div>').text(result.data.ups) );
         // // var num_comments = $('<p></p>')
-        group.append($('<div class="comments"></div>').text(result.data.num_comments) );
-        group.append($('<hr>') );
+        subgroup.append($('<div class="comments"></div>').text(result.data.num_comments) );
+        subgroup.append($('<hr>') );
+        group.append(subgroup);
+
       })
     $("#content").empty().append(group);
-  })
+
+  }).fail(function() {
+    alert("Your search terms were not valid")
+});
 // .success(function() { alert("second success"); })
-.error(function() {alert("Your search terms were not valid"); })
 // .complete(function() { alert("complete"); });
 }
 }

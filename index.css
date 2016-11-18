@@ -1,65 +1,21 @@
 @font-face {
 	font-family: 'Kayak Sans';
-	src: url('KayakSans-Light.eot');
-	src: url('KayakSans-Light.eot?#iefix') format('embedded-opentype'),
-		url('KayakSans-Light.woff2') format('woff2'),
-		url('KayakSans-Light.woff') format('woff'),
-		url('KayakSans-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Kayak Sans';
-	src: url('KayakSans-BoldItalic.eot');
-	src: url('KayakSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('KayakSans-BoldItalic.woff2') format('woff2'),
-		url('KayakSans-BoldItalic.woff') format('woff'),
-		url('KayakSans-BoldItalic.ttf') format('truetype');
-	font-weight: bold;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Kayak Sans';
-	src: url('KayakSans.eot');
-	src: url('KayakSans.eot?#iefix') format('embedded-opentype'),
-		url('KayakSans.woff2') format('woff2'),
-		url('KayakSans.woff') format('woff'),
-		url('KayakSans.ttf') format('truetype');
+	src: url('fonts/KayakSans.eot');
+	src: url('fonts/KayakSans.eot?#iefix') format('embedded-opentype'),
+		url('fonts/KayakSans.woff2') format('woff2'),
+		url('fonts/KayakSans.woff') format('woff'),
+		url('fonts/KayakSans.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Kayak Sans';
-	src: url('KayakSans-RegularItalic.eot');
-	src: url('KayakSans-RegularItalic.eot?#iefix') format('embedded-opentype'),
-		url('KayakSans-RegularItalic.woff2') format('woff2'),
-		url('KayakSans-RegularItalic.woff') format('woff'),
-		url('KayakSans-RegularItalic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Kayak Sans';
-	src: url('KayakSans-LightItalic.eot');
-	src: url('KayakSans-LightItalic.eot?#iefix') format('embedded-opentype'),
-		url('KayakSans-LightItalic.woff2') format('woff2'),
-		url('KayakSans-LightItalic.woff') format('woff'),
-		url('KayakSans-LightItalic.ttf') format('truetype');
-	font-weight: 300;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Kayak Sans';
-	src: url('KayakSans-Bold.eot');
-	src: url('KayakSans-Bold.eot?#iefix') format('embedded-opentype'),
-		url('KayakSans-Bold.woff2') format('woff2'),
-		url('KayakSans-Bold.woff') format('woff'),
-		url('KayakSans-Bold.ttf') format('truetype');
+	src: url('fonts/KayakSans-Bold.eot');
+	src: url('fonts/KayakSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/KayakSans-Bold.woff2') format('woff2'),
+		url('fonts/KayakSans-Bold.woff') format('woff'),
+		url('fonts/KayakSans-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
